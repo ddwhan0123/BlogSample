@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PhoneGap</title>
+<script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script type="text/javascript" charset="utf-8" src="js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile-1.3.2.min.js"></script>
+</head>
+<script type="text/javascript">
+		$("#page").live("pagecreate",function(){
+			$("#gotoactivity").click(function() {
+			wjj.goToActivity($("#text1").val(),$("#text2").val());
+		});
+			});
+			
+		function makeToast(){
+			wjj.makeToast();
+		}
+
+		function getValue(){
+			 var x = document.getElementById("getValue").value;
+
+			wjj.getValue($(x));
+		}
+
+</script>
+<body>
+	<!-- 页面容器 -->
+	<div data-role="page" id="page">
+		<!-- header -->
+		<div data-role="header" data-position="fixed">
+			<h1>大标题 很长很长</h1>
+		</div>
+		<!-- content部分 -->
+		<div data-role="content">
+			<p><h1>你好 打了一长串字</h1></p>
+			用户名: <input type="text" id="text1" placeholder="输入内容" />
+			密   码:<input type="text" id="text2" placeholder="输入内容" />		 
+			 <a id="gotoactivity" data-role="button" >跳转到activity</a>
+
+			 <a id="makeToast" data-role="button" onclick="makeToast()">制造吐司</a>
+
+		<a href="https://www.baidu.com/" data-role="button">外部链接</a>
+
+		<a data-icon="home" data-role="button">主页图标按钮</a>
+
+		<br>
+
+		<div data-role="controlgroup" data-type="horizontal">
+			<a data-role="button">aa</a>
+			<a data-role="button">bb</a>
+			<a data-role="button">cc</a>
+			<a data-role="button">dd</a>
+		</div
+
+		<!-- MP3播放部分 -->
+		<audio controls>
+			 <source src="vedio/horse.mp3" type="audio/mpeg">
+			 <source src="horse.ogg" type="audio/ogg">
+		</audio>
+
+		<input type="range" name="points" id="points" value="15" min="0" max="100" data-show-value="true">
+		<a id="getValue" data-role="button" onclick="getValue()">获取滑动的参数</a>
+
+		</div>
+		<!-- footer部分 -->
+		<div data-role="footer"  data-position="fixed">
+			<h4>脚注</h4>
+		</div>
+	</div>
+
+</body>
+</html>

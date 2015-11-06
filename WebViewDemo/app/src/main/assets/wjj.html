@@ -1,0 +1,24 @@
+<html>
+<head>
+<meta http-equiv="Content-Type"	content="text/html;charset=utf-8">
+<script type="text/javascript">
+function javacalljs(){
+	 document.getElementById("content").innerHTML +=   
+         "<br\>java调用了js函数";
+}
+
+function javacalljswithargs(arg){
+	 document.getElementById("content").innerHTML +=   
+         ("<br\>"+arg);
+}
+
+</script>
+</head>
+<body>
+this is my html <br/><br>
+<button onClick="window.wjj.startFunction()">点击调用java代码</button><br/><br>
+<button onClick="window.wjj.startFunction('hello world')" >点击调用java代码并传递参数</button>
+<br/>
+<div id="content">内容显示</div>
+</body>
+</html>
