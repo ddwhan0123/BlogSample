@@ -1,0 +1,42 @@
+<html>
+<head>
+<meta http-equiv="Content-Type"	content="text/html;charset=utf-8">
+<script type="text/javascript">
+function javacalljs(){
+	 document.getElementById("javacalljscontent").innerHTML +=
+         "<br\>java调用了js函数";
+}
+
+function javacalljswithargs(arg){
+	 document.getElementById("javacalljswithargscontent").innerHTML +=
+         ("<br\>"+arg);
+}
+</script>
+</head>
+
+this is my html <br/><br>
+<button onClick="window.wjj.startFunction()">点击调用java代码</button><br/>
+<br>
+<button onClick="window.wjj.startFunction('hello world')" >点击调用java代码并传递参数</button>
+<br/>
+<video width="320" height="240">
+    <source src="vedio/movie.mp4"  type="video/mp4">
+    <source src="movie.ogg"  type="video/ogg">
+    您的浏览器不支持 HTML5 video 标签。
+</video>
+
+<br>
+<audio controls>
+    <source src="horse.ogg" type="audio/ogg">
+    <source src="audio/horse.mp3" type="audio/mpeg">
+    您的浏览器不支持 audio 元素。
+</audio>
+
+<br/>
+<div id="javacalljscontent">内容显示</div>
+<br/>
+
+<div id="javacalljswithargscontent">内容显示</div>
+
+</body>
+</html>
