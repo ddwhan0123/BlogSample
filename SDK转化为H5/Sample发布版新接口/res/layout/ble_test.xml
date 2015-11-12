@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/bottomBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/cmdSelect"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/FrameLayout1"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <Spinner
+                android:id="@+id/cmdList"
+                android:layout_width="253dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center" />
+
+            <Button
+                android:id="@+id/send"
+                android:layout_width="69dp"
+                android:layout_height="79dp"
+                android:layout_gravity="right|center"
+                android:text="发送" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/state"
+                android:textColor="#dcbdbc"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/stateText"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="0.84"
+                android:textColor="#dcbdbc"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/scanBle"
+                style="?android:attr/buttonStyleSmall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:text="@string/scan_ble"
+                android:textStyle="italic|bold" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center" >
+
+                <TextView
+                    android:id="@+id/batteryLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/batteryLevel"
+                    android:textColor="#dcbdbc"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/batteryLevelRefresh"
+                    style="?android:attr/buttonStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:layout_margin="2dp"
+	                android:textStyle="italic|bold"
+                    android:text="@string/batteryLevelRefresh" />
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/clearRecvZone"
+                    style="?android:attr/buttonStyleSmall"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_gravity="center"
+	                android:layout_margin="2dp"
+	                android:textStyle="italic|bold"
+                    android:text="@string/clearRecvZone" />
+
+                <TextView
+                    android:id="@+id/recvZone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="10dp"
+                    android:hint="@string/recvZone"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/lv_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/common_prompted_dlg_title_bk"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center"
+            android:gravity="left|center"
+            android:layout_margin="8dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:singleLine="true"
+            android:textColor="@color/common_prompted_dlg_title"
+            android:textSize="@dimen/normal_font_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/lv_title"
+        android:background="@drawable/common_prompted_dlg_content_bk"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/frameLayout43"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="3dp" >
+
+            <EditText
+                android:id="@+id/oldPin"
+                style="@style/common_edit_text_style"
+                android:gravity="center"
+                android:hint="@string/old_pin_hint_test"
+                android:inputType="number"
+                android:maxLength="12"
+                android:singleLine="true"
+                android:textSize="20sp"  >
+
+            </EditText>
+
+            <Button
+                android:id="@+id/clear_in_old_pin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="right|center"
+                android:background="@drawable/btn_clear" />
+            
+        </FrameLayout>
+        
+        <TextView
+            android:id="@+id/text_count_old_pin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/pin_count_format_default"
+            android:textColor="#ff0000"
+            android:textSize="@dimen/small_font_size" />
+        
+        <FrameLayout
+            android:id="@+id/frameLayoutNewPin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="3dp" >
+
+            <EditText
+                android:id="@+id/newPin"
+                style="@style/common_edit_text_style"
+                android:gravity="center"
+                android:hint="@string/new_pin_hint_test"
+                android:inputType="number"
+                android:maxLength="12"
+                android:singleLine="true"
+                android:textSize="20sp"  >
+
+            </EditText>
+
+            <Button
+                android:id="@+id/clear_in_new_pin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="right|center"
+                android:background="@drawable/btn_clear" />
+            
+        </FrameLayout>
+        
+        <TextView
+            android:id="@+id/text_count_new_pin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="@string/pin_count_format_default"
+            android:textColor="#ff0000"
+            android:textSize="@dimen/small_font_size" />
+        
+        <TextView
+            android:id="@+id/tip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:singleLine="true"
+            android:gravity="center"
+            android:textColor="#ff0000"
+            android:textSize="@dimen/small_font_size" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="12dp" >
+
+            <Button
+                android:id="@+id/negativeBtn"
+                android:layout_width="@dimen/prompt_dlg_button_width"
+                android:layout_height="@dimen/prompt_dlg_button_height"
+                android:background="@drawable/btn_cancel"
+                android:textColor="@color/white"
+                android:textSize="@dimen/normal_font_size"
+                android:layout_marginRight="15dp" />
+
+            <Button
+                android:id="@+id/positiveBtn"
+                android:layout_width="@dimen/prompt_dlg_button_width"
+                android:layout_height="@dimen/prompt_dlg_button_height"
+                android:background="@drawable/btn_ok"
+                android:textColor="@color/white"
+                android:textSize="@dimen/normal_font_size" />
+            
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+	package="cn.eid.sample.idspsdk.newapi" 
+	android:versionCode="1"
+	android:versionName="1.0.0">
+
+	<uses-sdk android:minSdkVersion="14" 
+	    android:targetSdkVersion="22" />
+
+	<uses-permission android:name="android.permission.NFC" />
+	<uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+	<supports-screens android:anyDensity="true"
+		android:largeScreens="true" android:normalScreens="true"
+		android:smallScreens="true" android:xlargeScreens="true" />
+
+	<application 
+	    android:allowBackup="true" 
+	    android:name="cn.eid.sample.idspsdk.common.BaseApplication"
+	    android:icon="@drawable/icon6"
+		android:label="H5调用SDK事例" 
+		android:theme="@style/AppTheme">
+		
+		<activity android:name="cn.eid.sample.idspsdk.newapi.Home" 
+		    android:screenOrientation="portrait">
+		    
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+			
+		</activity>
+		
+		<activity android:name="cn.eid.sample.idspsdk.newapi.ApiList" 
+		    android:launchMode="singleTask"
+			android:screenOrientation="portrait" >
+		</activity>
+		
+		<activity android:name="cn.eid.sample.idspsdk.newapi.H5ApiList" 
+		    android:launchMode="singleTask"
+			android:screenOrientation="portrait" >
+		</activity>
+		
+		<activity android:name="cn.eid.sample.idspsdk.newapi.ReadWithNFC" 
+		    android:launchMode="singleTask"
+			android:screenOrientation="portrait" >
+		</activity>
+		
+		<activity android:name="cn.eid.sample.idspsdk.newapi.ReadWithBleReader" 
+		    android:launchMode="singleTask"
+			android:screenOrientation="portrait" >
+		</activity>
+		
+	</application>
+
+</manifest>

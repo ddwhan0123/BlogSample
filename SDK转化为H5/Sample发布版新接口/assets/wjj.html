@@ -1,0 +1,59 @@
+<html>
+<head>
+<meta http-equiv="Content-Type"	content="text/html;charset=utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<script type="text/javascript">
+function javacalljs(){
+	 document.getElementById("javacalljscontent").innerHTML +=
+         "<br\>java调用了js函数";
+}
+
+function javacalljswithargs(arg){
+	 document.getElementById("javacalljswithargscontent").innerHTML +=
+         ("<br\>"+arg);
+}
+
+
+
+</script>
+</head>
+
+this is my html <br/><br>
+<button onClick="window.wjj.startFunction()">点击调用java代码</button><br/>
+<br>
+<button onClick="window.wjj.startFunction('hello world')" >点击调用java代码并传递参数</button>
+<br/>
+<br>
+<video width="320" height="240" controls>
+    <source src="vedio/movie.mp4"  type="video/mp4">
+    <source src="movie.ogg"  type="video/ogg">
+    您的浏览器不支持 HTML5 video 标签。
+</video>
+
+<br>
+<br>
+<audio controls>
+    <source src="horse.ogg" type="audio/ogg">
+    <source src="audio/horse.mp3" type="audio/mpeg">
+    您的浏览器不支持 audio 元素。
+</audio>
+
+<br>
+<br>
+判断是否支持NFC的按钮<button onclick="window.wjj.checkNFCAvailable()">点击，判断是否支持NFC</button>
+<br>
+是否支持常规蓝牙的按钮<button onclick="window.wjj.checkBlueToothavailable()">点击，判断是否支持常规蓝牙</button>
+<br>
+是否支持BLE的按钮<button onclick="window.wjj.checkSupportBLE()">点击，判断是否支持BLE</button>
+<br>
+判断蓝牙是否开启的按钮<button onclick="window.wjj.checkBlueToothisEnabled()">点击，判断蓝牙是否开启，如果未开启跳转开启界面</button>
+<br>
+判断NFC是否开启的按钮<button onclick="window.wjj.checkNFCisEnabled()">点击，判断NFC是否开启，如果未开启跳转开启界面</button>
+<br>
+<div id="javacalljscontent">不传参</div>
+<br/>
+
+<div id="javacalljswithargscontent">传参</div>
+
+</body>
+</html>

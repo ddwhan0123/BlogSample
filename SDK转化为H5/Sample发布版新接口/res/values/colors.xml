@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+   	<color name="white">#FFFFFF</color>
+	<color name="black">#000000</color>
+    <color name="all_bg">#eaeef1</color>
+    <color name="above_bg">#0a85cb</color>
+    <color name="bottom_bg">#0a85cb</color>
+    <color name="bottom_item_selected">#075d8e</color>
+   	<color name="hyperlink_text">#f68f4a</color>
+   	<color name="tip_text">#4e4c59</color>
+   	<color name="delete_panel_bg">#E5E5E5</color>
+   	<color name="delete_panel_liner">#B3B3B3</color>
+   	<color name="item_title">#3a3a3a</color>
+   	<color name="item_state">#1c7efb</color>
+   	<color name="guide_bg">#3b589c</color>
+   	<color name="item_bg">#cacaca</color>
+    <color name="mark_all_in_delete_panel">#1c7efb</color>
+    <color name="cancel_all_in_delete_panel">#1c7efb</color>
+    <color name="delete_in_delete_panel">#1c7efb</color>
+   	
+    <color name="bind_textview_tip_color">#4e4c59</color>
+    
+    <color name="skip_pressed_text">#b5daef</color>
+    <color name="skip_focused_text">#ffffff</color>
+	<color name="title">#004492</color>
+	<color name="content">#595959</color>
+	<color name="common_big_button_text_color">#ffffff</color>
+	<color name="textColor_hint">#B0B0B0</color>
+
+	<color name="settings_text_color_pressed">#fff</color>
+	<color name="settings_text_color_normal">#4b4b4b</color>
+
+
+	<color name="common_titlebar">#4b4b4b</color>
+	<color name="copyright_info">#3c3c3c</color>
+
+	<color name="message_title_normal">#4b4b4b</color>
+	<color name="message_state_normal">#1e7bc0</color>
+	<color name="message_time_normal">#9a9a9a</color>
+
+	<color name="message_divider">#d5d5d5</color>
+	<color name="message_item_pressed_bg">#1d94ff</color>
+	<color name="message_item_normal_bg">#fff</color>
+	<color name="message_text_pressed">#fff</color>
+
+	<color name="common_tip_color">#7d7f80</color>
+	<color name="readedmessage_selectall">#76b9f1</color>
+
+	<color name="common_prompted_dlg_title">#8b8b8b</color>
+	<color name="common_prompted_dlg_text">#4e4c59</color>
+	<color name="btn_ok_text_color">#FFFFFF</color>
+	<color name="btn_cancel_text_color">#0847AF</color>
+	<color name="btn_fetch_sms_text_color">#FFFFFF</color>
+	<color name="btn_fetch_sms_text">#9E9E9F</color>
+
+    <color name="gesture_background">#ff303237</color>
+
+	<color name="contents_text">#ff000000</color>
+	<color name="encode_view">#ffffffff</color>
+	<color name="help_button_view">#ffcccccc</color>
+	<color name="help_view">#ff404040</color>
+	<color name="possible_result_points">#c0ffff00</color>  
+	<color name="result_image_border">#ffffffff</color>
+	<color name="result_minor_text">#ffc0c0c0</color>
+	<color name="result_points">#c000ff00</color>
+	<color name="result_text">#ffffffff</color>
+	<color name="result_view">#b0000000</color>
+	<color name="sbc_header_text">#ff808080</color>
+	<color name="sbc_header_view">#ffffffff</color>
+	<color name="sbc_list_item">#fffff0e0</color>
+	<color name="sbc_layout_view">#ffffffff</color>
+	<color name="sbc_page_number_text">#ff000000</color>
+	<color name="sbc_snippet_text">#ff4b4b4b</color>
+	<color name="share_text">#ff000000</color>
+	<color name="share_view">#ffffffff</color>
+	<color name="status_view">#50000000</color>
+	<color name="status_text">#ffffffff</color>
+	<color name="transparent">#00000000</color>
+	<color name="viewfinder_frame">#ff000000</color>
+	<color name="viewfinder_laser">#ffff0000</color>
+	<color name="viewfinder_mask">#60000000</color>
+	<color name="dropdown_item_text_color">#9d9d9d</color>
+	<color name="item_background_color">#FF21BCCE</color>
+	<color name="dropdown_text_color">#FFFFFF</color>
+	
+	
+</resources>

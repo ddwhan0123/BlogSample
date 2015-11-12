@@ -1,0 +1,198 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp" >
+    
+    <TextView
+        android:id="@+id/readerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#00AE5F"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    
+    <TextView
+        android:id="@+id/connectState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/readerName"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="5dp"
+        android:text=""
+        android:textColor="#FF0000"
+        android:textSize="15sp" />
+    
+     <RelativeLayout 
+        android:id="@+id/device_operation"
+        android:layout_below="@id/connectState"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+     
+         <Button 
+	        android:id="@+id/scanDevice"
+	        android:text="@string/scan_device"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginRight="10dp"
+	        />
+         
+	    <Button
+	        android:id="@+id/disConnectDevice"
+	        android:text="@string/dis_connect_device" 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_toRightOf="@id/scanDevice"
+	        />
+     
+     </RelativeLayout>
+     
+     
+    
+    <ScrollView
+        android:id="@+id/sampleBody"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/device_operation"
+        android:scrollbars="vertical"
+        android:visibility="visible" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/go2Auth"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="@string/go2Auth"
+                    android:textSize="20sp"
+                    android:textColor="#656E6B"
+                    android:textStyle="bold"/>
+                
+                <Button
+		            android:id="@+id/getPinRange"
+		            style="@style/apiTestBtn"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="getPinRange" />
+                
+                <Button
+		            android:id="@+id/changePin"
+		            style="@style/apiTestBtn"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="changePin" />
+                
+                <Button
+		            android:id="@+id/login"
+					style="@style/apiTestBtn"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="login" />
+                
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+                
+                <TextView
+                    android:id="@+id/go2Function"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:text="@string/go2Function"
+                    android:textSize="20sp"
+                    android:textColor="#656E6B"
+                    android:textStyle="bold"/>
+                
+                <Button
+		            android:id="@+id/isEIDCard"
+		            style="@style/apiTestBtn"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="isEIDCard" />
+                
+                <Button
+		            android:id="@+id/getFinancialCardInfo"
+		            style="@style/apiTestBtn"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="getFinancialCardInfo" />
+                
+                <Button
+		            android:id="@+id/getCardBankNO"
+		            style="@style/apiTestBtn"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="getCardBankNO" />
+
+                <Button
+		            android:id="@+id/getRandom"
+		            style="@style/apiTestBtn"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="getRandom" />
+                
+                <Button
+		            android:id="@+id/getAbilityInfo"
+		            style="@style/apiTestBtn"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="getAbilityInfo" />
+                
+                <Button
+		            android:id="@+id/getCert"
+		            style="@style/apiTestBtn"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="getCert" />
+                
+                <Button
+		            android:id="@+id/hash"
+		            style="@style/apiTestBtn"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="hash" />
+                
+                <Button
+		            android:id="@+id/sign"
+		            style="@style/apiTestBtn"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="sign" />
+                
+                <Button
+		            android:id="@+id/verify"
+		            style="@style/apiTestBtn"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="verify" />
+                
+                <Button
+		            android:id="@+id/ErrorCodeTest"
+		            style="@style/apiTestBtn"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:text="ErrorCodeTest" />
+                
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

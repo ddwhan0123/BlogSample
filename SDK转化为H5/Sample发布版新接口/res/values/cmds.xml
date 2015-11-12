@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="cmd">
+	    <item>指令1&#8212;上电</item>
+	    <item>指令2&#8212;挑战</item>
+	    <item>指令3&#8212;验PIN-111111</item>
+	    <item>指令4&#8212;RSA验签1</item>
+	    <item>指令5&#8212;RSA验签2</item>
+	    <item>指令6&#8212;SM2验签1</item>
+	    <item>指令7&#8212;SM2验签2</item>
+	    <item>指令8&#8212;杂项1</item>
+	    <item>指令9&#8212;杂项2</item>
+	    <item>指令10&#8212;杂项3</item>
+	    <item>指令11&#8212;杂项4</item>
+	</string-array>
+</resources>

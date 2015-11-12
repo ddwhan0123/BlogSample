@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">SDK示例发布版新版</string>
+	<string name="action_settings">Settings</string>
+	<string name="app_ver">APP版本信息：%1$s</string>
+	<string name="dev_info">设备型号信息：%1$s</string>
+	<string name="os_info">系统版本信息：Android %1$s</string>
+	<string name="nfc_firmware">NFC芯片信息：%1$s</string>
+	<string name="nfc_info">NFC支持情况：%1$s</string>
+	<string name="sdk_ver">SDK版本信息：%1$s</string>
+	<string name="ble_info">BLE支持情况：%1$s</string>
+
+	<string name="open_failed">开卡失败</string>
+	<string name="get_cert_failed">获取证书失败</string>
+	<string name="verify_pin_failed">校验eID签名密码失败</string>
+	<string name="hash_failed">HASH失败</string>
+	<string name="private_key_sign_failed">私钥签名失败</string>
+	<string name="failed_format">（%1$s）</string>
+
+	<string name="common_dealing_request">处理中&#8230;</string>
+	<string name="common_ok">确定</string>
+	<string name="common_retry">重试</string>
+	<string name="common_continue">继续</string>
+	<string name="common_cancel">取消</string>
+	<string name="detect_nfc_firmware">检测NFC固件信息&#8230;</string>
+	<string name="reading_card">获取eID信息&#8230;</string>
+	<string name="type_pin">验证eID签名密码</string>
+	<string name="prompt_dlg_title">提示</string>
+	<string name="read_card_failed">获取卡信息失败，请确认是否支持的卡片！</string>
+
+	<string name="card_op_failed">卡操作失败：</string>
+	<string name="auth_failed">认证失败</string>
+	<string name="pin_hint_test">请输入4~12位数字</string>
+	<string name="old_pin_hint_test">原密码(4~12位数字)</string>
+	<string name="new_pin_hint_test">新密码(4~12位数字)</string>
+	<string name="clear">清除</string>
+	
+	<string name="pin_invalid">请输入合法的密码！</string>
+	
+	<string name="detect_nfc_firmware_failed">不支持对该芯片的检测</string>
+	<string name="nxp_firmware">恩智浦[NXP]</string>
+	<string name="broadcom_firmware">博通[Broadcom]</string>
+
+	<string name="nfc_supported">NFC已支持</string>
+	<string name="nfc_not_supported">NFC不支持</string>
+	<string name="ble_supported">BLE已支持</string>
+	<string name="ble_not_supported">BLE不支持</string>
+	
+	<string name="nfc_closed">NFC已关闭，是否开启？</string>
+	
+	<string name="go2Auth">----- 认证相关-----</string>
+	<string name="go2Function">----- 功能相关-----</string>
+	<string name="result">----- %1$s 执行结果-----</string>
+	<string name="resultOK">成功</string>
+	<string name="resultFailed">失败</string>
+	<string name="resultMoreTag">更多细节：</string>
+	<string name="resultMoreNfc">请将卡片贴近NFC识别区域</string>
+	<string name="resultMoreBle">请将卡片连接到蓝牙读卡器</string>
+	<string name="kissTip">请将卡片由远及近贴近至手机背面感应区域</string>
+	<string name="back">返回列表</string>
+	<string name="kissCardAgin">重新刷卡</string>
+	<string name="nextStep">请决定下一步操作？</string>
+	
+	<string name="titleChangePin">修改eID签名密码</string>
+	<string name="titleVerifyPin">校验eID签名密码</string>
+	
+	<string name="invalid_pin">请输入有效的密码</string>
+	<string name="pin_count_format_default">已输入数字：0 个</string>
+	<string name="pin_count_format">已输入数字：%1$s 个</string>
+	
+	
+	<string name="batteryLevel">电量：%1$s</string>
+	<string name="batteryLevelUnknown">未知</string>
+	<string name="batteryLevelFailed">获取失败</string>
+	<string name="batteryLevelRefresh">刷新</string>
+	<string name="cmdInvalid">指令非法</string>
+	<string name="cmdSendFailed">发送失败</string>
+	<string name="cmdResult">【%1$s】的执行结果：\r\t</string>
+	<string name="recvZone">接收区</string>
+	<string name="clearRecvZone">清空接收区</string>
+	<string name="no_bluetooth">不支持蓝牙</string>
+	<string name="no_bluetooth_ble">不支持蓝牙BLE</string>
+	<string name="bt_check_message">需要蓝牙功能，是否进行设置？</string>
+	<string name="scanning_ble">正在搜索BLE终端</string>
+	<string name="bluetooth_find_title">搜索-点击设备名进行配对</string>
+    <string name="bt_mac_format">地址：%1$s</string>
+    <string name="bt_rssi_format">信号：%1$s</string>
+	<string name="bluetooth_tip_discover_finished">搜索完毕，点击继续搜索</string>
+	<string name="bluetooth_rescan">重新扫描</string>
+	<string name="bluetooth_start_find">开始扫描&#8230;</string>
+	<string name="connect_failed_format">连接%1$s失败</string>
+	<string name="connected_format">%1$s已连接!</string>
+	<string name="disconnected_format">%1$s已断开连接!</string>
+	<string name="bluetooth_connecting">BLE终端连接&#8230;</string>
+	<string name="bluetooth_not_found">未搜索到任何可用的BLE终端！</string>
+	<string name="state">状态：</string>
+	<string name="fetch_bettery">获取电量&#8230;</string>
+	
+	<string name="test_elink_reader">金联蓝牙读卡器测试</string>
+	<string name="invalid_action">非法的action</string>
+	
+	<string name="readerNameList">选择【%1$s】方式</string>
+	<string name="readerSelected">已选择【%1$s】方式</string>
+	
+	<string name="nfc">NFC</string>
+	<string name="elinkReader">金联读卡器（接触式）</string>
+	<string name="decardReader">德卡读卡器</string>
+	<string name="shuashua">刷刷手环</string>
+	
+	<string name="enter_nfc_setting">进入NFC设置</string>
+	<string name="scan_ble">搜索BLE</string>
+	<string name="scan_decard_reader">搜索德卡读卡器</string>
+	<string name="scan_shuashua">正在连接刷刷手环</string>
+	<string name="scan_elink_reader">搜索金联读卡器</string>
+	<string name="coming_soon">敬请期待</string>
+	
+	<string name="scan_device">扫描蓝牙</string>
+	<string name="dis_connect_device">断开连接</string>
+	<string name="connect_success">连接成功</string>
+	<string name="connect_failed">连接失败</string>
+	
+	<string name="devConnected">设备已连接</string>
+	<string name="devDisconnected">设备已断开</string>
+	
+	<string name="viewLog">查看日志</string>
+	<string name="runOne">执行一次</string>
+	<string name="runMore">执行</string>
+	<string name="runMoreDefault">10</string>
+	<string name="runTimesConfirm">将执行%1$s次，确认吗？</string>
+	<string name="timesTip">次</string>
+	
+</resources>

@@ -1,0 +1,78 @@
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>H5ApiList</title>
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/font-awesome.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+    <script type="text/javascript">
+    // 显示读卡方式
+    function javacalljssetreadername(arg){
+      document.getElementById("readername").innerHTML+=("<br\>"+arg);
+    }
+
+    //NFC时隐藏
+    function HiddenBtn(type) {
+    var currentBtn1 = document.getElementById("scanDevice");
+    var currentBtn2 = document.getElementById("disConnectDevice");
+    if (type == "d") {
+        currentBtn1.style.display = "block"; //style中的display属性
+        currentBtn2.style.display = "block"; //style中的display属性
+        document.getElementById("connectstate").style.display = "block";
+        }
+    else if (type == "h") {
+        currentBtn1.style.display = "none";
+        currentBtn2.style.display = "none";
+        document.getElementById("connectstate").style.display = "none";
+        }
+    }
+
+    function changeConnectState(str){
+        document.getElementById("connectstate").innerHTML= str;
+    }
+
+    </script>
+    </head>
+
+    <body>
+        <h2 id="readername"></h2>
+
+        <div id="connectstate"></div>
+       
+            <button id="scanDevice" class="btn btn-block btn-lg btn-info" display:block onclick="window.wjj.jsToJava('scanDevice')">扫描蓝牙</button>
+
+            <button id="disConnectDevice" class="btn btn-block btn-lg btn-info" display:block onclick="window.wjj.jsToJava('disConnectDevice')">断开连接</button>
+
+        <h2>--认证相关--</h2>
+
+            <button class="btn btn-block btn-lg btn-info" onclick="window.wjj.jsToJava('getPinRange')">getPinRange</button>
+            <button class="btn btn-block btn-lg btn-info" onclick="window.wjj.jsToJava('changePin')">changePin</button>
+            <button class="btn btn-block btn-lg btn-info" onclick="window.wjj.jsToJava('login')">login</button>
+
+        <h2>--功能相关--</h2>
+            <button class="btn btn-block btn-lg btn-info" onclick="window.wjj.jsToJava('isEIDCard')">isEIDCard</button>
+            <button class="btn btn-block btn-lg btn-info" onclick="window.wjj.jsToJava('getFinancialCardInfo')">getFinancialCardInfo</button>
+            <button class="btn btn-block btn-lg btn-info" onclick="window.wjj.jsToJava('getCardBankNO')">getCardBankNO</button>
+            <button class="btn btn-block btn-lg btn-info" onclick="window.wjj.jsToJava('getRandom')">getRandom</button>
+            <button class="btn btn-block btn-lg btn-info" onclick="window.wjj.jsToJava('getAbilityInfo')">getAbilityInfo</button>
+            <button class="btn btn-block btn-lg btn-info" onclick="window.wjj.jsToJava('getCert')">getCert</button>
+            <button class="btn btn-block btn-lg btn-info" onclick="window.wjj.jsToJava('hash')">hash</button>
+            <button class="btn btn-block btn-lg btn-info" onclick="window.wjj.jsToJava('sign')">sign</button>
+             <button class="btn btn-block btn-lg btn-info" onclick="window.wjj.jsToJava('verify')">verify</button>
+            <button class="btn btn-block btn-lg btn-info" onclick="window.wjj.jsToJava('ErrorCodeTest')">ErrorCodeTest</button>
+    </body>
+</html>

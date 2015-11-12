@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    tools:context=".Home" >
+
+    <RelativeLayout
+        android:id="@+id/baseInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/app_ver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="@string/app_ver"
+            android:textColor="#bcbcbc"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/sdk_ver"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/app_ver"
+            android:text="@string/sdk_ver"
+            android:textColor="#bcbcbc"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/dev_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/sdk_ver"
+            android:text="@string/dev_info"
+            android:textColor="#bcbcbc"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/os_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/dev_info"
+            android:text="@string/os_info"
+            android:textColor="#bcbcbc"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nfc_firmware"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/os_info"
+            android:text="@string/nfc_firmware"
+            android:textColor="#bcbcbc"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nfc_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/nfc_firmware"
+            android:text="@string/nfc_info"
+            android:textColor="#bcbcbc"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        
+        <TextView
+            android:id="@+id/ble_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/nfc_info"
+            android:text="@string/ble_info"
+            android:textColor="#bcbcbc"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        
+        <ScrollView
+            android:id="@+id/sampleBody"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/ble_info"
+            android:scrollbars="vertical"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/nfc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/nfc_info"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/nfc" />
+                
+                <Button
+                    android:id="@+id/decardReader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/elinkReader"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/decardReader" />
+                
+            </LinearLayout>
+            
+        </ScrollView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

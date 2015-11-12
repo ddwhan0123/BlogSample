@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="common_titlebar_height">45dp</dimen>
+    <dimen name="common_titlebar_back_height">30dp</dimen>
+    <dimen name="common_titlebar_back_margin_left">10dp</dimen>
+    <dimen name="common_bottombar_height">60dp</dimen>
+    <dimen name="common_titlebar_textview_margin_left">5dp</dimen>
+    <dimen name="common_edit_text_height">50dp</dimen>
+    <dimen name="common_margin">20dp</dimen>
+    <dimen name="common_margin_half">10dp</dimen>
+    <dimen name="common_margin_twice">40dp</dimen>
+    
+    <dimen name="common_big_button_width">180dp</dimen>
+   	<dimen name="common_big_button_height">70dp</dimen>
+   	
+   	<dimen name="common_normal_button_width">150dp</dimen>
+	<dimen name="common_normal_button_height">60dp</dimen>
+
+	<dimen name="common_small_button_width">130dp</dimen>
+	<dimen name="common_small_button_height">50dp</dimen>
+	
+	<dimen name="common_clear_button_width">35dp</dimen>
+	<dimen name="common_clear_button_height">30dp</dimen>
+
+    <dimen name="settings_text_padding">10dp</dimen>
+
+	<dimen name="messagelist_margintop">20dp</dimen>
+	<dimen name="messagelist_height">80dp</dimen>
+
+	<dimen name="qrcode_view_height">50dp</dimen>
+
+	<dimen name="faq_navi_bar_arrow_width">30dp</dimen>
+	<dimen name="faq_navi_bar_arrow_height">20dp</dimen>
+
+
+    <dimen name="unread_message_size">16sp</dimen>
+    <dimen name="message_title_size">18sp</dimen>
+    <dimen name="message_state_size">14sp</dimen>
+    <dimen name="big_font_size">24sp</dimen>
+    <dimen name="normal_font_size">20sp</dimen>
+    <dimen name="small_font_size">16sp</dimen>
+    <dimen name="tiny_font_size">14sp</dimen>
+    <dimen name="common_bottombar_textview_fontsize">12sp</dimen>
+    <dimen name="common_content_font_size">15sp</dimen>
+    <dimen name="edit_text_font_size">20sp</dimen>
+    <dimen name="settings_text_font_size">17sp</dimen>
+    
+    <dimen name="prompt_dlg_width">260dp</dimen>
+    
+    <dimen name="prompt_dlg_padding">10dp</dimen>
+    <dimen name="prompt_dlg_button_width">120dp</dimen>
+    <dimen name="prompt_dlg_button_height">48dp</dimen>
+    <dimen name="prompt_dlg_buttons_margin">24dp</dimen>
+
+
+</resources>
