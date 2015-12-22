@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">PopupWindowDemo</string>
+    <string name="makeBGGray">按了背景变灰</string>
+</resources>

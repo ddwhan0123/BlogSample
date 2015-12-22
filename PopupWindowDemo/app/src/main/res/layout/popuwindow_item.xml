@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/PeachPuff">
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/oneLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/oneBtn"
+                style="@style/popTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/filter_1" />
+
+            <Button
+                android:id="@+id/twoBtn"
+                style="@style/popTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/filter_2" />
+
+            <Button
+                android:id="@+id/threeBtn"
+                style="@style/popTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/filter_3" />
+
+            <Button
+                android:id="@+id/fourBtn"
+                style="@style/popTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/filter_4" />
+
+            <Button
+                android:id="@+id/fiveBtn"
+                style="@style/popTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/filter_5" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/twoLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/sixBtn"
+                style="@style/popTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/filter_6" />
+
+            <Button
+                android:id="@+id/sevenBtn"
+                style="@style/popTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/filter_7" />
+
+            <Button
+                android:id="@+id/eightBtn"
+                style="@style/popTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/filter_8" />
+
+            <Button
+                android:id="@+id/nineBtn"
+                style="@style/popTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/filter_9" />
+
+            <Button
+                android:id="@+id/ninePlusBtn"
+                style="@style/popTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/filter_9_plus" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>
