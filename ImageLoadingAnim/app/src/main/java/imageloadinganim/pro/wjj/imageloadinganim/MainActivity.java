@@ -30,7 +30,7 @@ public class MainActivity extends Father {
     private Bitmap bitmap;
     private String fileUrl;
     private float imageWidth, imageHeight;
-    Paint paint2;
+    private Paint paint2;
 
     @Override
     public int getLayout() {
@@ -122,7 +122,7 @@ public class MainActivity extends Father {
 
 
     private boolean checkFile(String checkFile) {
-        File mFile = new File(fileUrl);
+        File mFile = new File(checkFile);
         //若该文件存在
         if (mFile.exists()) {
             return true;
