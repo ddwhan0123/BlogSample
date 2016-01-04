@@ -33,23 +33,34 @@ public class AnimActivity extends Activity implements View.OnClickListener {
         stopAnim.setOnClickListener(this);
         startAnim.setOnClickListener(this);
         toppleAnim.setOnClickListener(this);
+
+        anim = (AnimationDrawable) animImageView.getDrawable();
     }
 
     @Override
     protected void onResume() {
         super.onResume();
+        Log.d("--->onResume", "onResume");
     }
 
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
         super.onWindowFocusChanged(hasFocus);
         Log.d("-->onWindowFocusChanged", "--->AnimActivity onWindowFocusChanged");
+        if (hasFocus) {
+            anim.start();
+        }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d("--->onPause", "onPause");
     }
 
     @Override
     public void onClick(View v) {
         int flag = v.getId();
-        anim = (AnimationDrawable) animImageView.getDrawable();
         switch (flag) {
             case R.id.startAnim:
                 animImageView.setImageResource(R.drawable.positive_anim);
