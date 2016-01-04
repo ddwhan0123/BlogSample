@@ -31,7 +31,6 @@ public class CustomView extends View implements View.OnTouchListener{
     }
 
 
-
     Context context;
     int ScreenWidth, ScreenHeight;
     Paint barPaint, textPaint, bgPaint, buttonPaint;

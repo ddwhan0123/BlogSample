@@ -6,12 +6,13 @@ import android.os.Bundle;
 import android.util.Log;
 import android.util.TypedValue;
 import android.view.View;
+import android.view.animation.Animation;
 import android.widget.Button;
 import android.widget.ImageView;
 
 public class MainActivity extends Activity {
     ImageView imageView;
-    Button button3;
+    Button button3,toAnim;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +36,17 @@ public class MainActivity extends Activity {
 
         imageView=(ImageView)findViewById(R.id.imageView);
         button3=(Button)findViewById(R.id.button3);
+
+        toAnim=(Button)findViewById(R.id.toAnim);
+        toAnim.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (v.getId() == R.id.toAnim) {
+                    Intent intent = new Intent(MainActivity.this, AnimActivity.class);
+                    startActivity(intent);
+                }
+            }
+        });
     }
 
     @Override

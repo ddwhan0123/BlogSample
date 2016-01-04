@@ -16,8 +16,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:theme="@style/Theme.AppCompat.NoActionBar"
-            android:name=".CopyActivity"></activity>
+            android:name=".CopyActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".AnimActivity"></activity>
     </application>
 
 </manifest>

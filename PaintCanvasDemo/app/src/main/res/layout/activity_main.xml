@@ -58,4 +58,13 @@
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@+id/button3"
         android:layout_toEndOf="@+id/button3" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="toAnim"
+        android:id="@+id/toAnim"
+        android:layout_below="@+id/toCopy"
+        android:layout_alignLeft="@+id/toCopy"
+        android:layout_alignStart="@+id/toCopy" />
 </RelativeLayout>
