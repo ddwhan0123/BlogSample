@@ -89,7 +89,7 @@ public class CustomView extends View {
 
     }
 
-    // 开启路径动画
+    // 开启动画
     public void startAnim(long duration) {
         valueAnimator = ValueAnimator.ofFloat(0, mPathMeasure.getLength());
         Log.d("-->measure length", "measure length = " + mPathMeasure.getLength());
@@ -101,7 +101,7 @@ public class CustomView extends View {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
                 float value = (Float) animation.getAnimatedValue();
-                // 获取当前点坐标封装到mCurrentPosition
+                // 获取当前点坐标封装到coords
                 mPathMeasure.getPosTan(value, coords, null);
                 postInvalidate();
             }
@@ -109,7 +109,7 @@ public class CustomView extends View {
         valueAnimator.start();
 
     }
-
+    //停止动画
     public void stopAnim() {
         valueAnimator.cancel();
     }
