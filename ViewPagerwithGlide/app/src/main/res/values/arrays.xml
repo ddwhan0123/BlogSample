@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="imagesArray">
+        <item>http://ww4.sinaimg.cn/large/9e6995c9gw1f2tp4g7uevj209q058jry.jpg</item>
+        <item>http://ww2.sinaimg.cn/large/9e6995c9gw1f2tpfpecjej209q05vmxs.jpg</item>
+        <item>http://ww3.sinaimg.cn/large/9e6995c9gw1f2tpfq0os3j209q051gm0.jpg</item>
+        <item>http://ww3.sinaimg.cn/mw1024/9e6995c9gw1f2tpfr5u94j209a05gwfe.jpg</item>
+        <item>http://ww3.sinaimg.cn/large/9e6995c9gw1f2tpfqo5exj209q06qtab.jpg</item>
+    </string-array>
+</resources>
+
