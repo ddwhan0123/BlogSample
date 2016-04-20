@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="wjj.com.percentdemo.MainActivity">
+
+    <ImageView
+        android:id="@+id/a1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/a1"
+        app:layout_heightPercent="30%"
+        app:layout_widthPercent="70%" />
+
+
+    <ImageView
+        android:id="@+id/a3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/a1"
+        android:background="@drawable/a3"
+        app:layout_heightPercent="28%"
+        app:layout_widthPercent="60%" />
+
+    <ImageView
+        android:id="@+id/a2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_below="@id/a1"
+        android:layout_toRightOf="@+id/a3"
+        android:background="@drawable/a2"
+        app:layout_heightPercent="28%"
+        app:layout_widthPercent="40%" />
+
+    <ImageView
+        android:id="@+id/a4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/a4"
+        app:layout_heightPercent="25%"
+        app:layout_widthPercent="25%" />
+
+  <ImageView
+      android:layout_below="@id/a2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:background="@drawable/a5"
+      app:layout_heightPercent="35%"
+      android:layout_centerHorizontal="true"
+      app:layout_widthPercent="35%"
+      android:layout_alignParentBottom="true"/>
+
+</android.support.percent.PercentRelativeLayout>
