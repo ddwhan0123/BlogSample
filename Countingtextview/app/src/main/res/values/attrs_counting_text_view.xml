@@ -1,0 +1,5 @@
+<resources>
+    <declare-styleable name="countingTextView">
+        <attr name="duration" format="integer" />
+    </declare-styleable>
+</resources>
