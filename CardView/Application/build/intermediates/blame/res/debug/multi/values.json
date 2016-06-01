@@ -1,0 +1,648 @@
+[
+    {
+        "outputFile": "/Users/jiajiewang/Downloads/CardView/Application/build/intermediates/res/merged/debug/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 60,
+                    "endOffset": 111
+                },
+                "from": {
+                    "file": "/Users/jiajiewang/Downloads/CardView/Application/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.2/res/values/values.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endColumn": 60,
+                        "endOffset": 112
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 116,
+                    "endColumn": 61,
+                    "endOffset": 173
+                },
+                "from": {
+                    "file": "/Users/jiajiewang/Downloads/CardView/Application/src/main/res/values/colors.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 646,
+                        "endColumn": 61,
+                        "endOffset": 703
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 178,
+                    "endColumn": 61,
+                    "endOffset": 235
+                },
+                "from": {
+                    "file": "/Users/jiajiewang/Downloads/CardView/Application/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.2/res/values/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 117,
+                        "endColumn": 61,
+                        "endOffset": 174
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 240,
+                    "endColumn": 61,
+                    "endOffset": 297
+                },
+                "from": {
+                    "file": "/Users/jiajiewang/Downloads/CardView/Application/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.2/res/values/values.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 179,
+                        "endColumn": 61,
+                        "endOffset": 236
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 302,
+                    "endColumn": 63,
+                    "endOffset": 361
+                },
+                "from": {
+                    "file": "/Users/jiajiewang/Downloads/CardView/Application/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.2/res/values/values.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 241,
+                        "endColumn": 63,
+                        "endOffset": 300
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 988,
+                    "endColumn": 57,
+                    "endOffset": 1041
+                },
+                "from": {
+                    "file": "/Users/jiajiewang/Downloads/CardView/Application/src/main/res/values/dimens.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 718,
+                        "endColumn": 57,
+                        "endOffset": 771
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 1046,
+                    "endColumn": 55,
+                    "endOffset": 1097
+                },
+                "from": {
+                    "file": "/Users/jiajiewang/Downloads/CardView/Application/src/main/res/values/dimens.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 776,
+                        "endColumn": 55,
+                        "endOffset": 827
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 1102,
+                    "endColumn": 58,
+                    "endOffset": 1156
+                },
+                "from": {
+                    "file": "/Users/jiajiewang/Downloads/CardView/Application/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.2/res/values/values.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 4,
+                        "startOffset": 1934,
+                        "endColumn": 58,
+                        "endOffset": 1988
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 1161,
+                    "endColumn": 56,
+                    "endOffset": 1213
+                },
+                "from": {
+                    "file": "/Users/jiajiewang/Downloads/CardView/Application/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.2/res/values/values.xml",
+                    "position": {
+                        "startLine": 35,
+                        "startColumn": 4,
+                        "startOffset": 1993,
+                        "endColumn": 56,
+                        "endOffset": 2045
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 1218,
+                    "endColumn": 53,
+                    "endOffset": 1267
+                },
+                "from": {
+                    "file": "/Users/jiajiewang/Downloads/CardView/Application/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.2/res/values/values.xml",
+                    "position": {
+                        "startLine": 36,
+                        "startColumn": 4,
+                        "startOffset": 2050,
+                        "endColumn": 53,
+                        "endOffset": 2099
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 1272,
+                    "endColumn": 69,
+                    "endOffset": 1337
+                },
+                "from": {
+                    "file": "/Users/jiajiewang/Downloads/CardView/Application/src/main/res/values/template-dimens.xml",
+                    "position": {
+                        "startLine": 28,
+                        "startColumn": 4,
+                        "startOffset": 959,
+                        "endColumn": 69,
+                        "endOffset": 1024
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 1342,
+                    "endColumn": 42,
+                    "endOffset": 1380
+                },
+                "from": {
+                    "file": "/Users/jiajiewang/Downloads/CardView/Application/src/main/res/values/template-dimens.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 880,
+                        "endColumn": 42,
+                        "endOffset": 918
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 1385,
+                    "endColumn": 43,
+                    "endOffset": 1424
+                },
+                "from": {
+                    "file": "/Users/jiajiewang/Downloads/CardView/Application/src/main/res/values/template-dimens.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 836,
+                        "endColumn": 43,
+                        "endOffset": 875
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 1429,
+                    "endColumn": 44,
+                    "endOffset": 1469
+                },
+                "from": {
+                    "file": "/Users/jiajiewang/Downloads/CardView/Application/src/main/res/values/template-dimens.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 791,
+                        "endColumn": 44,
+                        "endOffset": 831
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 17,
+                    "startColumn": 4,
+                    "startOffset": 1474,
+                    "endColumn": 42,
+                    "endOffset": 1512
+                },
+                "from": {
+                    "file": "/Users/jiajiewang/Downloads/CardView/Application/src/main/res/values/template-dimens.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 748,
+                        "endColumn": 42,
+                        "endOffset": 786
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1517,
+                    "endColumn": 41,
+                    "endOffset": 1554
+                },
+                "from": {
+                    "file": "/Users/jiajiewang/Downloads/CardView/Application/src/main/res/values/template-dimens.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 706,
+                        "endColumn": 41,
+                        "endOffset": 743
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 1559,
+                    "endColumn": 51,
+                    "endOffset": 1606
+                },
+                "from": {
+                    "file": "/Users/jiajiewang/Downloads/CardView/Application/src/main/res/values/dimens.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 832,
+                        "endColumn": 51,
+                        "endOffset": 879
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1611,
+                    "endColumn": 67,
+                    "endOffset": 1674
+                },
+                "from": {
+                    "file": "/Users/jiajiewang/Downloads/CardView/Application/src/main/res/values/template-dimens.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 1029,
+                        "endColumn": 67,
+                        "endOffset": 1092
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1679,
+                    "endColumn": 52,
+                    "endOffset": 1727
+                },
+                "from": {
+                    "file": "/Users/jiajiewang/Downloads/CardView/Application/src/main/res/values/base-strings.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 647,
+                        "endColumn": 52,
+                        "endOffset": 695
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1732,
+                    "endLine": 27,
+                    "endColumn": 13,
+                    "endOffset": 2123
+                },
+                "from": {
+                    "file": "/Users/jiajiewang/Downloads/CardView/Application/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 716,
+                        "endLine": 24,
+                        "endColumn": 13,
+                        "endOffset": 1119
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 28,
+                    "startColumn": 4,
+                    "startOffset": 2128,
+                    "endColumn": 69,
+                    "endOffset": 2193
+                },
+                "from": {
+                    "file": "/Users/jiajiewang/Downloads/CardView/Application/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 26,
+                        "startColumn": 4,
+                        "startOffset": 1188,
+                        "endColumn": 69,
+                        "endOffset": 1253
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 2198,
+                    "endColumn": 63,
+                    "endOffset": 2257
+                },
+                "from": {
+                    "file": "/Users/jiajiewang/Downloads/CardView/Application/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 25,
+                        "startColumn": 4,
+                        "startOffset": 1124,
+                        "endColumn": 63,
+                        "endOffset": 1183
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 30,
+                    "startColumn": 4,
+                    "startOffset": 2262,
+                    "endLine": 39,
+                    "endColumn": 13,
+                    "endOffset": 2497
+                },
+                "from": {
+                    "file": "/Users/jiajiewang/Downloads/CardView/Application/src/main/res/values/base-strings.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 700,
+                        "endLine": 28,
+                        "endColumn": 13,
+                        "endOffset": 947
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 40,
+                    "startColumn": 4,
+                    "startOffset": 2502,
+                    "endColumn": 69,
+                    "endOffset": 2567
+                },
+                "from": {
+                    "file": "/Users/jiajiewang/Downloads/CardView/Application/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 646,
+                        "endColumn": 69,
+                        "endOffset": 711
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 41,
+                    "startColumn": 4,
+                    "startOffset": 2572,
+                    "endColumn": 50,
+                    "endOffset": 2618
+                },
+                "from": {
+                    "file": "/Users/jiajiewang/Downloads/CardView/Application/src/main/res/values/template-styles.xml",
+                    "position": {
+                        "startLine": 24,
+                        "startColumn": 4,
+                        "startOffset": 768,
+                        "endColumn": 51,
+                        "endOffset": 815
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 42,
+                    "startColumn": 4,
+                    "startOffset": 2623,
+                    "endLine": 49,
+                    "endColumn": 12,
+                    "endOffset": 3084
+                },
+                "from": {
+                    "file": "/Users/jiajiewang/Downloads/CardView/Application/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.2/res/values/values.xml",
+                    "position": {
+                        "startLine": 38,
+                        "startColumn": 4,
+                        "startOffset": 2105,
+                        "endLine": 45,
+                        "endColumn": 12,
+                        "endOffset": 2566
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 50,
+                    "startColumn": 4,
+                    "startOffset": 3089,
+                    "endLine": 52,
+                    "endColumn": 12,
+                    "endOffset": 3210
+                },
+                "from": {
+                    "file": "/Users/jiajiewang/Downloads/CardView/Application/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.2/res/values/values.xml",
+                    "position": {
+                        "startLine": 47,
+                        "startColumn": 4,
+                        "startOffset": 2572,
+                        "endLine": 49,
+                        "endColumn": 12,
+                        "endOffset": 2693
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 53,
+                    "startColumn": 4,
+                    "startOffset": 3215,
+                    "endLine": 55,
+                    "endColumn": 12,
+                    "endOffset": 3338
+                },
+                "from": {
+                    "file": "/Users/jiajiewang/Downloads/CardView/Application/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.2/res/values/values.xml",
+                    "position": {
+                        "startLine": 51,
+                        "startColumn": 4,
+                        "startOffset": 2699,
+                        "endLine": 53,
+                        "endColumn": 12,
+                        "endOffset": 2822
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 56,
+                    "startColumn": 4,
+                    "startOffset": 3343,
+                    "endColumn": 59,
+                    "endOffset": 3398
+                },
+                "from": {
+                    "file": "/Users/jiajiewang/Downloads/CardView/Application/src/main/res/values/template-styles.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 651,
+                        "endColumn": 60,
+                        "endOffset": 707
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 57,
+                    "startColumn": 4,
+                    "startOffset": 3403,
+                    "endColumn": 52,
+                    "endOffset": 3451
+                },
+                "from": {
+                    "file": "/Users/jiajiewang/Downloads/CardView/Application/src/main/res/values/template-styles.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 713,
+                        "endColumn": 53,
+                        "endOffset": 762
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 58,
+                    "startColumn": 4,
+                    "startOffset": 3456,
+                    "endColumn": 26,
+                    "endOffset": 3478
+                },
+                "from": {
+                    "file": "/Users/jiajiewang/Downloads/CardView/Application/src/main/res/values/template-styles.xml",
+                    "position": {
+                        "startLine": 27,
+                        "startColumn": 4,
+                        "startOffset": 849,
+                        "endColumn": 27,
+                        "endOffset": 872
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 59,
+                    "startColumn": 4,
+                    "startOffset": 3483,
+                    "endLine": 62,
+                    "endColumn": 12,
+                    "endOffset": 3674
+                },
+                "from": {
+                    "file": "/Users/jiajiewang/Downloads/CardView/Application/src/main/res/values/template-styles.xml",
+                    "position": {
+                        "startLine": 29,
+                        "startColumn": 4,
+                        "startOffset": 878,
+                        "endLine": 32,
+                        "endColumn": 12,
+                        "endOffset": 1069
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 63,
+                    "startColumn": 4,
+                    "startOffset": 3679,
+                    "endLine": 68,
+                    "endColumn": 12,
+                    "endOffset": 3952
+                },
+                "from": {
+                    "file": "/Users/jiajiewang/Downloads/CardView/Application/src/main/res/values/template-styles.xml",
+                    "position": {
+                        "startLine": 34,
+                        "startColumn": 4,
+                        "startOffset": 1075,
+                        "endLine": 39,
+                        "endColumn": 12,
+                        "endOffset": 1348
+                    }
+                }
+            }
+        ]
+    }
+]

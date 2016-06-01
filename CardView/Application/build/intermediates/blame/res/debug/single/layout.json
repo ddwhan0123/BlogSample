@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/jiajiewang/Downloads/CardView/Application/build/intermediates/res/merged/debug/layout/fragment_card_view.xml",
+        "source": "/Users/jiajiewang/Downloads/CardView/Application/src/main/res/layout/fragment_card_view.xml"
+    },
+    {
+        "merged": "/Users/jiajiewang/Downloads/CardView/Application/build/intermediates/res/merged/debug/layout/activity_card_view.xml",
+        "source": "/Users/jiajiewang/Downloads/CardView/Application/src/main/res/layout/activity_card_view.xml"
+    }
+]

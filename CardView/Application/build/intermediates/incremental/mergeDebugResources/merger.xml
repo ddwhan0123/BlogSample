@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="21.0.2$Generated" generated="true"><source path="/Users/jiajiewang/Downloads/CardView/Application/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.2/res"/></dataSet><dataSet config="main$Generated" generated="true"><source path="/Users/jiajiewang/Downloads/CardView/Application/src/main/res"/><source path="/Users/jiajiewang/Downloads/CardView/Application/src/common/res"/><source path="/Users/jiajiewang/Downloads/CardView/Application/src/template/res"/><source path="/Users/jiajiewang/Downloads/CardView/Application/build/generated/res/rs/debug"/><source path="/Users/jiajiewang/Downloads/CardView/Application/build/generated/res/resValues/debug"/></dataSet><dataSet config="debug$Generated" generated="true"><source path="/Users/jiajiewang/Downloads/CardView/Application/src/debug/res"/></dataSet><dataSet config="21.0.2" from-dependency="true" generated-set="21.0.2$Generated"><source path="/Users/jiajiewang/Downloads/CardView/Application/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.2/res"><file path="/Users/jiajiewang/Downloads/CardView/Application/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.2/res/values/values.xml" qualifiers=""><declare-styleable name="CardView">
+
+        <!-- Background color for CardView. -->
+        <attr format="color" name="cardBackgroundColor"/>
+        <!-- Corner radius for CardView. -->
+        <attr format="dimension" name="cardCornerRadius"/>
+        <!-- Elevation for CardView. -->
+        <attr format="dimension" name="cardElevation"/>
+        <!-- Maximum Elevation for CardView. -->
+        <attr format="dimension" name="cardMaxElevation"/>
+        <!-- Add padding in API v21+ as well to have the same measurements with previous versions. -->
+        <attr format="boolean" name="cardUseCompatPadding"/>
+        <!-- Add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners. -->
+        <attr format="boolean" name="cardPreventCornerOverlap"/>
+        <!-- Inner padding between the edges of the Card and children of the CardView. -->
+        <attr format="dimension" name="contentPadding"/>
+        <!-- Inner padding between the left edge of the Card and children of the CardView. -->
+        <attr format="dimension" name="contentPaddingLeft"/>
+        <!-- Inner padding between the right edge of the Card and children of the CardView. -->
+        <attr format="dimension" name="contentPaddingRight"/>
+        <!-- Inner padding between the top edge of the Card and children of the CardView. -->
+        <attr format="dimension" name="contentPaddingTop"/>
+        <!-- Inner padding between the bottom edge of the Card and children of the CardView. -->
+        <attr format="dimension" name="contentPaddingBottom"/>
+    </declare-styleable><color name="cardview_shadow_start_color">#37000000</color><dimen name="cardview_default_elevation">2dp</dimen><style name="CardView">
+        <item name="cardBackgroundColor">@color/cardview_light_background</item>
+        <item name="cardCornerRadius">@dimen/cardview_default_radius</item>
+        <item name="cardElevation">@dimen/cardview_default_elevation</item>
+        <item name="cardMaxElevation">@dimen/cardview_default_elevation</item>
+        <item name="cardUseCompatPadding">false</item>
+        <item name="cardPreventCornerOverlap">true</item>
+    </style><dimen name="cardview_compat_inset_shadow">1dp</dimen><color name="cardview_shadow_end_color">#03000000</color><style name="CardView.Light">
+        <item name="cardBackgroundColor">@color/cardview_light_background</item>
+    </style><color name="cardview_light_background">#FFFAFAFA</color><dimen name="cardview_default_radius">2dp</dimen><style name="CardView.Dark">
+        <item name="cardBackgroundColor">@color/cardview_dark_background</item>
+    </style><color name="cardview_dark_background">#FF202020</color></file></source></dataSet><dataSet config="main" generated-set="main$Generated"><source path="/Users/jiajiewang/Downloads/CardView/Application/src/main/res"><file name="ic_launcher" path="/Users/jiajiewang/Downloads/CardView/Application/src/main/res/drawable-hdpi/ic_launcher.png" qualifiers="hdpi-v4" type="drawable"/><file name="tile" path="/Users/jiajiewang/Downloads/CardView/Application/src/main/res/drawable-hdpi/tile.9.png" qualifiers="hdpi-v4" type="drawable"/><file name="ic_launcher" path="/Users/jiajiewang/Downloads/CardView/Application/src/main/res/drawable-mdpi/ic_launcher.png" qualifiers="mdpi-v4" type="drawable"/><file name="ic_launcher" path="/Users/jiajiewang/Downloads/CardView/Application/src/main/res/drawable-xhdpi/ic_launcher.png" qualifiers="xhdpi-v4" type="drawable"/><file name="ic_launcher" path="/Users/jiajiewang/Downloads/CardView/Application/src/main/res/drawable-xxhdpi/ic_launcher.png" qualifiers="xxhdpi-v4" type="drawable"/><file name="activity_card_view" path="/Users/jiajiewang/Downloads/CardView/Application/src/main/res/layout/activity_card_view.xml" qualifiers="" type="layout"/><file name="fragment_card_view" path="/Users/jiajiewang/Downloads/CardView/Application/src/main/res/layout/fragment_card_view.xml" qualifiers="" type="layout"/><file path="/Users/jiajiewang/Downloads/CardView/Application/src/main/res/values/base-strings.xml" qualifiers=""><string name="intro_message">
+        
+        
+            
+            This sample demonstrates how to use CardView introduced in the support library for the
+            Android L preview.
+            
+        
+        
+    </string><string name="app_name">CardView Sample</string></file><file path="/Users/jiajiewang/Downloads/CardView/Application/src/main/res/values/colors.xml" qualifiers=""><color name="cardview_initial_background">#71C3DE</color></file><file path="/Users/jiajiewang/Downloads/CardView/Application/src/main/res/values/dimens.xml" qualifiers=""><dimen name="activity_vertical_margin">16dp</dimen><dimen name="seekbar_label_length">70dp</dimen><dimen name="activity_horizontal_margin">16dp</dimen></file><file path="/Users/jiajiewang/Downloads/CardView/Application/src/main/res/values/strings.xml" qualifiers=""><string name="title_activity_card_view">CardViewActivity</string><string name="cardview_elevation_seekbar_text">Elevation</string><string name="cardview_radius_seekbar_text">Radius</string><string name="cardview_contents">This is a CardView widget. CardView widgets can have
+        shadows and rounded corners.
+        \n\nTo create a card with a shadow, use the <font fgcolor="#FFFFFFFF">android:elevation</font>
+        attribute.
+        \n\nTo set the corner radius in your layouts, use the <font fgcolor="#FFFFFFFF">card_view:cardCornerRadius</font> attribute.
+    </string></file><file path="/Users/jiajiewang/Downloads/CardView/Application/src/main/res/values/template-dimens.xml" qualifiers=""><dimen name="margin_small">8dp</dimen><dimen name="vertical_page_margin">@dimen/margin_medium</dimen><dimen name="margin_tiny">4dp</dimen><dimen name="margin_large">32dp</dimen><dimen name="margin_huge">64dp</dimen><dimen name="margin_medium">16dp</dimen><dimen name="horizontal_page_margin">@dimen/margin_medium</dimen></file><file path="/Users/jiajiewang/Downloads/CardView/Application/src/main/res/values/template-styles.xml" qualifiers=""><style name="Theme.Base" parent="android:Theme.Light"/><style name="Widget.SampleMessage">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:lineSpacingMultiplier">1.1</item>
+    </style><style name="AppTheme" parent="Theme.Sample"/><style name="Theme.Sample" parent="Theme.Base"/><style name="Widget"/><style name="Widget.SampleMessageTile">
+        <item name="android:background">@drawable/tile</item>
+        <item name="android:shadowColor">#7F000000</item>
+        <item name="android:shadowDy">-3.5</item>
+        <item name="android:shadowRadius">2</item>
+    </style></file><file path="/Users/jiajiewang/Downloads/CardView/Application/src/main/res/values-sw600dp/template-dimens.xml" qualifiers="sw600dp-v13"><dimen name="vertical_page_margin">@dimen/margin_medium</dimen><dimen name="horizontal_page_margin">@dimen/margin_huge</dimen></file><file path="/Users/jiajiewang/Downloads/CardView/Application/src/main/res/values-sw600dp/template-styles.xml" qualifiers="sw600dp-v13"><style name="Widget.SampleMessage">
+        <item name="android:textAppearance">?android:textAppearanceLarge</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:shadowDy">-6.5</item>
+    </style></file><file path="/Users/jiajiewang/Downloads/CardView/Application/src/main/res/values-v11/template-styles.xml" qualifiers="v11"><style name="Theme.Base" parent="android:Theme.Holo.Light"/></file><file path="/Users/jiajiewang/Downloads/CardView/Application/src/main/res/values-v21/base-template-styles.xml" qualifiers="v21"><style name="Theme.Base" parent="android:Theme.Material.Light">
+    </style></file></source><source path="/Users/jiajiewang/Downloads/CardView/Application/src/common/res"/><source path="/Users/jiajiewang/Downloads/CardView/Application/src/template/res"/><source path="/Users/jiajiewang/Downloads/CardView/Application/build/generated/res/rs/debug"/><source path="/Users/jiajiewang/Downloads/CardView/Application/build/generated/res/resValues/debug"/></dataSet><dataSet config="debug" generated-set="debug$Generated"><source path="/Users/jiajiewang/Downloads/CardView/Application/src/debug/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="CardView"><attr format="color" name="cardBackgroundColor"/><attr format="dimension" name="cardCornerRadius"/><attr format="dimension" name="cardElevation"/><attr format="dimension" name="cardMaxElevation"/><attr format="boolean" name="cardUseCompatPadding"/><attr format="boolean" name="cardPreventCornerOverlap"/><attr format="dimension" name="contentPadding"/><attr format="dimension" name="contentPaddingLeft"/><attr format="dimension" name="contentPaddingRight"/><attr format="dimension" name="contentPaddingTop"/><attr format="dimension" name="contentPaddingBottom"/></declare-styleable></configuration></mergedItems></merger>

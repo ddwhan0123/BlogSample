@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/jiajiewang/Downloads/CardView/Application/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="bf3db75590909529d25e07c30f79fc296ec32a17">
+        <dex dex="/Users/jiajiewang/Downloads/CardView/Application/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_35cb55e87c43f2319669c7fd29ba3fa509c7d926/classes.dex" />
+    </item>
+    <item
+        jar="/Users/jiajiewang/Downloads/CardView/Application/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.2/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="b017100da14f9c158c9f5f2f508333c224b24a7c">
+        <dex dex="/Users/jiajiewang/Downloads/CardView/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-21.0.2_76465e5fb2c0353ebcc5914c08c6fa3380198509/classes.dex" />
+    </item>
+    <item
+        jar="/Users/jiajiewang/Downloads/CardView/Application/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="2a480760c7af3bcb2b5ee9a9349bfb74451a9ad8">
+        <dex dex="/Users/jiajiewang/Downloads/CardView/Application/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_042ba6f6c13a9cd6f644fb7fb97f90e08173d235/classes.dex" />
+    </item>
+
+</items>
