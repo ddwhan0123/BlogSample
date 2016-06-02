@@ -1,0 +1,28 @@
+[
+    {
+        "outputFile": "/Users/jiajiewang/Downloads/PermissionRequest/Application/build/intermediates/res/merged/debug/values-v23/values-v23.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 4,
+                    "endColumn": 12,
+                    "endOffset": 200
+                },
+                "from": {
+                    "file": "/Users/jiajiewang/Downloads/PermissionRequest/Application/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.3.0/res/values-v23/values-v23.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endLine": 4,
+                        "endColumn": 12,
+                        "endOffset": 200
+                    }
+                }
+            }
+        ]
+    }
+]

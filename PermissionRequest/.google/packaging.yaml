@@ -1,0 +1,19 @@
+
+# GOOGLE SAMPLE PACKAGING DATA
+#
+# This file is used by Google as part of our samples packaging process.
+# End users may safely ignore this file. It has no relevance to other systems.
+---
+status:       PUBLISHED
+technologies: [Android]
+categories:   [Content]
+languages:    [Java]
+solutions:    [Mobile]
+github:       android-PermissionRequest
+level:        INTERMEDIATE
+icon:         screenshots/icon_web.png
+apiRefs:
+    - android:android.webkit.PermissionRequest
+    - android:android.webkit.WebView
+    - android:android.webkit.WebChromeClient
+license: apache2

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/jiajiewang/Downloads/PermissionRequest/Application/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="82ce13fd19cdfde0e392f03c27edeba8d4333648">
+        <dex dex="/Users/jiajiewang/Downloads/PermissionRequest/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-23.3.0_499dfb46a1f204e42a69842e22b7b1f48efd2269/classes.dex" />
+    </item>
+    <item
+        jar="/Users/jiajiewang/Downloads/PermissionRequest/Application/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d442db68637fd3c28732c66b322a43f1e1182ff6">
+        <dex dex="/Users/jiajiewang/Downloads/PermissionRequest/Application/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_1144c36920175930832e66335ef483a0a3f2b5ce/classes.dex" />
+    </item>
+    <item
+        jar="/Users/jiajiewang/Downloads/PermissionRequest/Application/build/intermediates/exploded-aar/com.android.support/support-v13/23.3.0/jars/libs/internal_impl-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8813bdcf7583107c4873150075d17c8072ec50cf">
+        <dex dex="/Users/jiajiewang/Downloads/PermissionRequest/Application/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.3.0_2ebd7d93ed83ecfa7d44827c757687e49d20729b/classes.dex" />
+    </item>
+    <item
+        jar="/Users/jiajiewang/Downloads/PermissionRequest/Application/build/intermediates/exploded-aar/com.android.support/support-v13/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a809555a2599054c3dcd1bf82b089315ac3a11df">
+        <dex dex="/Users/jiajiewang/Downloads/PermissionRequest/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v13-23.3.0_2c48126335d67e4cae64df02dc250adbe2a5398d/classes.dex" />
+    </item>
+    <item
+        jar="/Users/jiajiewang/Library/Android/sdkPlatform/extras/android/m2repository/com/android/support/support-annotations/23.3.0/support-annotations-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="/Users/jiajiewang/Downloads/PermissionRequest/Application/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.3.0_de56f2074d83a5873c14c9b3c0c5a8c664100ad4/classes.dex" />
+    </item>
+    <item
+        jar="/Users/jiajiewang/Downloads/PermissionRequest/Application/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/libs/internal_impl-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="/Users/jiajiewang/Downloads/PermissionRequest/Application/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.3.0_632f6894c33a3244de445eb5995293b82b4056b3/classes.dex" />
+    </item>
+    <item
+        jar="/Users/jiajiewang/Downloads/PermissionRequest/Application/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="/Users/jiajiewang/Downloads/PermissionRequest/Application/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.3.0_0c9532ff58e3d6ba86be27746fc1f57fdc4f36d9/classes.dex" />
+    </item>
+    <item
+        jar="/Users/jiajiewang/Downloads/PermissionRequest/Application/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="e9085175b1ad139aa8e4f1dd5099c8af2c9b5d3e">
+        <dex dex="/Users/jiajiewang/Downloads/PermissionRequest/Application/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_a017d1b0bd0c80522b37a235000d1b8b833a9c28/classes.dex" />
+    </item>
+
+</items>
