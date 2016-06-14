@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.dialogdemo.MainActivity">
+
+    <Button
+        android:id="@+id/showMyLoadingDlg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="showMyLoadingDlg" />
+
+    <Button
+        android:id="@+id/showInfoDlgTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="showInfoDlg(两个按钮)" />
+
+    <Button
+        android:id="@+id/showInfoDlgOne"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="showInfoDlg(一个按钮)" />
+
+    <Button
+        android:id="@+id/showInputDlg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="showInputDlg(一个输入框)" />
+
+    <Button
+        android:id="@+id/showListDlg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="showListDlg" />
+    <Button
+        android:id="@+id/showComplexInputDlg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="showComplexInputDlg"/>
+
+</LinearLayout>

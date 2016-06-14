@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">DialogDemo</string>
+    <string name="connecting_to_server">Connecting to server</string>
+
+</resources>
