@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="stpi_default_circle_color">#b3bdc2</color>
+    <color name="stpi_default_indicator_color">#00E3E3</color>
+    <color name="stpi_default_line_color">#b3bdc2</color>
+    <color name="stpi_default_line_done_color">#00E3E3</color>
+</resources>
+
