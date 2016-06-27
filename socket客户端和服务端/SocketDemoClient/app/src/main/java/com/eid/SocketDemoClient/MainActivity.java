@@ -15,7 +15,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class MainActivity extends AppCompatActivity {
-    private final String ip = "192.168.1.122";
+    private final String ip = "192.168.1.119";
     Handler handler;
     // 定义与服务器通信的子线程
     ClientThread clientThread;

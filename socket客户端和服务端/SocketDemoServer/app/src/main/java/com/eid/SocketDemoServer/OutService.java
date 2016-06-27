@@ -16,9 +16,13 @@ import android.os.Handler;
 import android.os.IBinder;
 
 import com.apkfuns.logutils.LogUtils;
+import com.eid.SocketDemoServer.CustomView.MyWindowManager;
+import com.eid.SocketDemoServer.Moeel.PhoneMessage;
 
 public class OutService extends Service {
-    int nativeCount;
+    private int nativeCount;
+    public List<PhoneMessage> phoneMessageArrayList;
+    private boolean lastCount;
 
     /**
      * 用于在线程中创建或移除悬浮窗。
@@ -37,12 +41,21 @@ public class OutService extends Service {
 
     @Override
     public int onStartCommand(Intent intent, int flags, int startId) {
+        List<PhoneMessage> valueList = (List<PhoneMessage>) intent.getSerializableExtra("msgContent");
+
+        if (valueList != null) {
+            phoneMessageArrayList = valueList;
+            lastCount = true;
+            LogUtils.d("--->lastCount 构造里" + lastCount);
+        }
+
+
         int value = intent.getExtras().getInt("msgCount");
         nativeCount = value;
-        // 开启定时器，每隔0.5秒刷新一次
+        // 开启定时器，每隔2秒刷新一次
         if (timer == null) {
             timer = new Timer();
-            timer.scheduleAtFixedRate(new RefreshTask(), 0, 500);
+            timer.scheduleAtFixedRate(new RefreshTask(), 0, 2000);
         }
         return super.onStartCommand(intent, flags, startId);
     }
@@ -64,17 +77,7 @@ public class OutService extends Service {
                 handler.post(new Runnable() {
                     @Override
                     public void run() {
-                        MyWindowManager.createSmallWindow(getApplicationContext(), nativeCount);
-                    }
-                });
-            }
-            // 当前界面不是桌面，且有悬浮窗显示，则移除悬浮窗。
-            else if (!isHome() && MyWindowManager.isWindowShowing()) {
-                handler.post(new Runnable() {
-                    @Override
-                    public void run() {
-                        MyWindowManager.removeSmallWindow(getApplicationContext());
-                        MyWindowManager.removeBigWindow(getApplicationContext());
+                        MyWindowManager.createListWindow(getApplicationContext(), phoneMessageArrayList);
                     }
                 });
             }
@@ -84,7 +87,15 @@ public class OutService extends Service {
                     @Override
                     public void run() {
 //                        LogUtils.d("---->内存数据 条数为 " + nativeCount);
+//                        MyWindowManager.createBigWindow(getApplicationContext());
                         MyWindowManager.updateUsedPercent(getApplicationContext(), nativeCount);
+                        if (lastCount) {
+                            MyWindowManager.removeSmallWindow(getApplicationContext());
+                            MyWindowManager.removeListWindow(getApplicationContext());
+                            MyWindowManager.createListWindow(getApplicationContext(), phoneMessageArrayList);
+                            lastCount = false;
+                        }
+
                     }
                 });
             }

@@ -1,19 +1,16 @@
 package com.eid.SocketDemoServer;
 
 import android.annotation.SuppressLint;
-import android.content.ComponentName;
 import android.content.Intent;
-import android.content.ServiceConnection;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.IBinder;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.apkfuns.logutils.LogUtils;
+import com.eid.SocketDemoServer.Moeel.PhoneMessage;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -21,6 +18,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
+import java.io.Serializable;
 import java.net.InetAddress;
 import java.net.NetworkInterface;
 import java.net.ServerSocket;
@@ -47,12 +45,14 @@ public class MainActivity extends AppCompatActivity {
     public int msgCount = 0;
     Intent intent;
     private static final int PORT = 8888;
-    private String hostip;
+    private String hostIp;
     private Handler myHandler;
     private volatile boolean flag = true;//线程标志位
     private ExecutorService mExecutorService = null; //线程池
     private volatile ServerSocket server = null;
     private List<Socket> mList = new ArrayList<Socket>();
+    private Intent toHome;
+    private List<PhoneMessage> phoneMessageArrayList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,23 +60,29 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-
         myHandler = new Handler() {
             @SuppressLint("HandlerLeak")
             public void handleMessage(Message msg) {
                 if (msg.what == 0x1234) {
                     contentTv.append("\n" + msg.obj.toString());
                     msgCount++;
-                    LogUtils.d("--->msgCount 累积短信" + msgCount + " 条");
                     intent = new Intent(MainActivity.this, OutService.class);
+
                     intent.putExtra("msgCount", msgCount);
+                    Bundle mBundle = new Bundle();
+                    phoneMessageArrayList = makeData(msgCount);
+                    mBundle.putSerializable("msgContent", (Serializable) phoneMessageArrayList);
+                    intent.putExtras(mBundle);
+
                     startService(intent);
 
-                    Intent intent1 = new Intent();
-                    //为Intent设置Action、Category属性
-                    intent1.setAction(Intent.ACTION_MAIN);
-                    intent1.addCategory(Intent.CATEGORY_HOME);
-                    startActivity(intent1);
+                    if (toHome == null) {
+                        toHome = new Intent();
+                        //为Intent设置Action、Category属性
+                        toHome.setAction(Intent.ACTION_MAIN);
+                        toHome.addCategory(Intent.CATEGORY_HOME);
+                    }
+                    startActivity(toHome);
                 }
             }
         };
@@ -86,13 +92,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-        hostip = getLocalIpAddress();  //获取本机IP
-        ipTv.setText("IP地址 : " + hostip);
+        hostIp = getLocalIpAddress();  //获取本机IP
+        ipTv.setText("IP地址 : " + hostIp);
     }
 
     @Override
     protected void onDestroy() {
-        stopService(intent);
         super.onDestroy();
     }
 
@@ -256,6 +261,19 @@ public class MainActivity extends AppCompatActivity {
             LogUtils.e("--->WifiPreference IpAddress ", ex.toString());
         }
         return null;
+    }
+
+    private List<PhoneMessage> makeData(int count) {
+        List<PhoneMessage> list = new ArrayList<>();
+        PhoneMessage phoneMessage;
+        for (int k = 0; k < count; k++) {
+            phoneMessage = new PhoneMessage();
+            phoneMessage.setMsgContent("我是短信内容啊,第 " + k + " 条 哦!!!为了达到省略的效果,这里要加很多很多字,为了测试效果");
+            phoneMessage.setPhoneNumber("13090909000" + k);
+            phoneMessage.setMsgTime("现在的时间是 " + k);
+            list.add(phoneMessage);
+        }
+        return list;
     }
 
 }
