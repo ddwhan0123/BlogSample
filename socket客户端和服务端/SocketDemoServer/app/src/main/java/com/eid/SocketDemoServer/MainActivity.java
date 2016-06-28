@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -53,13 +54,14 @@ public class MainActivity extends AppCompatActivity {
     private List<Socket> mList = new ArrayList<Socket>();
     private Intent toHome;
     private List<PhoneMessage> phoneMessageArrayList;
+    private PhoneMessage phoneMessage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-
+        phoneMessageArrayList = new ArrayList<>();
         myHandler = new Handler() {
             @SuppressLint("HandlerLeak")
             public void handleMessage(Message msg) {
@@ -67,10 +69,15 @@ public class MainActivity extends AppCompatActivity {
                     contentTv.append("\n" + msg.obj.toString());
                     msgCount++;
                     intent = new Intent(MainActivity.this, OutService.class);
-
+                    String[] clintStr = msg.obj.toString().split("\\*");
+                    LogUtils.d("---> 传来的字符串是 " + msg.obj.toString());
+                    phoneMessage = new PhoneMessage();
+                    phoneMessage.setPhoneNumber(clintStr[0]);
+                    phoneMessage.setMsgTime(clintStr[1]);
+                    phoneMessage.setMsgContent(clintStr[2]);
                     intent.putExtra("msgCount", msgCount);
                     Bundle mBundle = new Bundle();
-                    phoneMessageArrayList = makeData(msgCount);
+                    phoneMessageArrayList.add(phoneMessage);
                     mBundle.putSerializable("msgContent", (Serializable) phoneMessageArrayList);
                     intent.putExtras(mBundle);
 
@@ -263,17 +270,5 @@ public class MainActivity extends AppCompatActivity {
         return null;
     }
 
-    private List<PhoneMessage> makeData(int count) {
-        List<PhoneMessage> list = new ArrayList<>();
-        PhoneMessage phoneMessage;
-        for (int k = 0; k < count; k++) {
-            phoneMessage = new PhoneMessage();
-            phoneMessage.setMsgContent("我是短信内容啊,第 " + k + " 条 哦!!!为了达到省略的效果,这里要加很多很多字,为了测试效果");
-            phoneMessage.setPhoneNumber("13090909000" + k);
-            phoneMessage.setMsgTime("现在的时间是 " + k);
-            list.add(phoneMessage);
-        }
-        return list;
-    }
 
 }

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.eid.SocketDemoClient.SettingActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请输入服务端Ip地址" />
+
+    <EditText
+        android:id="@+id/ipTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="在此输入服务端Ip地址" />
+
+    <EditText
+        android:id="@+id/filterET"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="在此输入过滤内容" />
+
+    <Button
+        android:id="@+id/addItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="添加过滤字段" />
+
+    <Button
+        android:id="@+id/okBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="提交配置" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/setting_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+</LinearLayout>

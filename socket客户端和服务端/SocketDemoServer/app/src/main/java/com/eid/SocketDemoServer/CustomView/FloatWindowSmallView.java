@@ -110,7 +110,7 @@ public class FloatWindowSmallView extends LinearLayout {
                 break;
             case MotionEvent.ACTION_UP:
                 // 如果手指离开屏幕时，xDownInScreen和xInScreen相等，且yDownInScreen和yInScreen相等，则视为触发了单击事件。
-                if (xDownInScreen == xInScreen && yDownInScreen == yInScreen) {
+                if (xDownInScreen - xInScreen < 30 && yDownInScreen - yInScreen < 30) {
 //                    openBigWindow();
                     openListWindow();
                 }
