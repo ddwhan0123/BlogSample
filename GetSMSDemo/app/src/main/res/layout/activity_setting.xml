@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.github.florent37.materialtextfield.MaterialTextField
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/left_margin"
+        app:mtf_image="@drawable/grin"
+        app:mtf_labelColor="@color/colorPrimary">
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/focus_et"
+            android:textColor="#333"
+            android:textColorHint="#666"
+            android:textSize="@dimen/text_size" />
+
+    </com.github.florent37.materialtextfield.MaterialTextField>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:layout_marginTop="@dimen/top_margin"
+            android:background="@color/colorPrimary"
+            android:clickable="true"
+            android:text="@string/add_btn_str" />
+
+        <com.gc.materialdesign.views.ButtonRectangle
+            android:id="@+id/jump"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/left_margin"
+            android:layout_marginTop="@dimen/top_margin"
+            android:background="@color/colorPrimary"
+            android:clickable="true"
+            android:text="@string/jump_to_next" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/left_margin"
+        android:layout_marginTop="@dimen/top_margin"
+        android:text="@string/focus_array"
+        android:textSize="@dimen/text_size" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/left_margin" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">GetSMSDemo</string>
+    <string name="focus_array">关注的联系人名单:</string>
+    <string name="focus_et">在此输入过滤的字段</string>
+    <string name="add_btn_str">添加过滤字段</string>
+    <string name="jump_to_next">前往监听页面</string>
+    <string name="bind">绑定广播</string>
+</resources>
