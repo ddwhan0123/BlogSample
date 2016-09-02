@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <Button
+        android:id="@+id/read_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="去掉读书的内容" />
+
+    <Button
+        android:id="@+id/send_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取输入框的内容" />
+
+    <EditText
+        android:hint="在这里输入传给宝宝"
+        android:id="@+id/edit_baobao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.wjj.numberdemo.widget.ReadBookTextView
+        android:id="@+id/read_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>
