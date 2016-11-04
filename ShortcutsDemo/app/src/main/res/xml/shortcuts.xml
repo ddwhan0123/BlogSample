@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <shortcut
+        android:shortcutId="shortcut1"
+        android:enabled="true"
+        android:icon="@drawable/happy"
+        android:shortcutShortLabel="@string/one_text"
+        android:shortcutLongLabel="@string/one_long"
+        android:shortcutDisabledMessage="@string/one_disabled">
+        <intent
+            android:action="one"
+            android:targetPackage="demo.wjj.shortcutsdemo"
+            android:targetClass="demo.wjj.shortcutsdemo.MainActivity" />
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="shortcut2"
+        android:enabled="false"
+        android:icon="@drawable/woman"
+        android:shortcutShortLabel="@string/two"
+        android:shortcutLongLabel="@string/two_long"
+        android:shortcutDisabledMessage="@string/two_disabled">
+        <intent
+            android:action="two"
+            android:targetPackage="demo.wjj.shortcutsdemo"
+            android:targetClass="demo.wjj.shortcutsdemo.MainActivity" />
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="shortcut3"
+        android:enabled="true"
+        android:icon="@drawable/angry"
+        android:shortcutShortLabel="@string/three"
+        android:shortcutLongLabel="@string/three_long"
+        android:shortcutDisabledMessage="@string/three_disabled">
+        <intent
+            android:action="three"
+            android:targetPackage="demo.wjj.shortcutsdemo"
+            android:targetClass="demo.wjj.shortcutsdemo.MainActivity" />
+    </shortcut>
+
+</shortcuts>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ShortcutsDemo</string>
+
+    <string name="one_text">我是1</string>
+    <string name="one_long">1长</string>
+    <string name="one_disabled">1不可用</string>
+    <string name="two">我是2</string>
+    <string name="two_long">2长</string>
+    <string name="two_disabled">2不可用</string>
+    <string name="three">我是3</string>
+    <string name="three_long">3长</string>
+    <string name="three_disabled">3不可用</string>
+</resources>
