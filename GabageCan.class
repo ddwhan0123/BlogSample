@@ -1,0 +1,164 @@
+package wjj.com.garbagecandemo.customview;
+
+import android.animation.ValueAnimator;
+import android.content.Context;
+import android.graphics.Canvas;
+import android.graphics.Color;
+import android.graphics.Paint;
+import android.graphics.Path;
+import android.util.AttributeSet;
+import android.util.Log;
+import android.view.View;
+
+import wjj.com.garbagecandemo.R;
+
+
+/**
+ * Created by jiajiewang on 2016/12/15.
+ */
+
+public class GabageCan extends View {
+
+    private Paint paint;
+    private Path path;
+    private int viewWidth, viewHeight, picWidth, picHeight;
+    private Float canBAnimProgress;
+    private ValueAnimator animator;
+
+
+    public GabageCan(Context context, AttributeSet attrs) {
+        super(context, attrs);
+        init();
+    }
+
+    public GabageCan(Context context) {
+        super(context);
+        init();
+    }
+
+    @Override
+    protected void onDraw(Canvas canvas) {
+        super.onDraw(canvas);
+        paint.setColor(getResources().getColor(R.color.colorAccent));
+        //设置画笔
+        paint.setStrokeWidth(5f);
+//        canvas.drawColor(Color.WHITE);
+        //创建下半部分的路径和三条线
+        createCanBPath();
+        //画路径和线
+        canvas.drawPath(path, paint);
+        //动画判断是否刷新视图
+        if (animator != null && animator.isRunning()) {
+            //动画执行过程中具体帧值
+            canBAnimProgress = (Float) animator.getAnimatedValue();
+            drawCan(0, canvas);
+            drawCan(1, canvas);
+            drawCan(2, canvas);
+            invalidate();
+        } else if (animator != null && !animator.isRunning()) {
+            drawCan(1, canvas);
+            drawCan(2, canvas);
+        }
+    }
+
+    public void startAnimator() {
+        animator = ValueAnimator.ofFloat(1f, 0f);
+        animator.setDuration(2000);
+        animator.start();
+        invalidate();
+    }
+
+
+    @Override
+    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+        int width = getMySize(100, widthMeasureSpec);
+        int height = getMySize(100, heightMeasureSpec);
+
+        if (width < height) {
+            height = width;
+        } else {
+            width = height;
+        }
+
+        setMeasuredDimension(width, height);
+        Log.d("--->", "width " + width + " height " + height);
+        viewWidth = width > 0 ? width : 0;
+        viewHeight = height > 0 ? height : 0;
+        if (viewWidth > 0) {
+            picWidth = viewWidth / 3;
+        }
+        if (viewHeight > 0) {
+            picHeight = viewHeight / 3;
+        }
+    }
+    //初始化画笔
+    private void init() {
+        paint = new Paint();
+        path = new Path();
+        paint.setStyle(Paint.Style.STROKE);
+    }
+
+    private void drawCan(int type, Canvas canvas) {
+        switch (type) {
+            case 0:
+                canvas.rotate(canBAnimProgress * 30, viewWidth / 2 + (picHeight / 2), viewHeight / 2 - (picWidth / 2));
+                break;
+            case 1:
+                canvas.drawLine(viewWidth / 2 - (picWidth / 2) - 20, viewHeight / 2 - (picWidth / 2) - (picHeight / 8),
+                        viewWidth / 2 + (picHeight / 2) + 20, viewHeight / 2 - (picWidth / 2) - (picHeight / 8), paint);
+                break;
+            case 2:
+                canvas.drawRect(viewWidth / 2 - (picWidth / 9), viewHeight / 2 - (picWidth / 2) - (picHeight / 4), viewWidth / 2 + (picHeight / 9),
+                        viewHeight / 2 - (picHeight / 2) - (picHeight / 8), paint);
+                break;
+            case 3:
+                break;
+        }
+    }
+
+
+    private void createCanBPath() {
+        if (path == null) {
+            path = new Path();
+        }
+        //画轮廓
+        path.moveTo(viewWidth / 2 - (picWidth / 2), viewHeight / 2 - (picWidth / 2));
+        path.lineTo(viewWidth / 2 - (picWidth / 3), viewHeight / 2 + (picHeight / 2));
+        path.lineTo(viewWidth / 2 + (picHeight / 3), viewHeight / 2 + (picHeight / 2));
+        path.lineTo(viewWidth / 2 + (picHeight / 3), viewHeight / 2 + (picHeight / 2));
+        path.lineTo(viewWidth / 2 + (picHeight / 2), viewHeight / 2 - (picWidth / 2));
+        //画里面的竖线
+        path.moveTo(viewWidth / 2 - (picWidth / 5), viewHeight / 2 - (picWidth / 3));
+        path.lineTo(viewWidth / 2 - (picWidth / 5), viewHeight / 2 + (picHeight / 3));
+        path.moveTo(viewWidth / 2 + (picWidth / 5), viewHeight / 2 - (picWidth / 3));
+        path.lineTo(viewWidth / 2 + (picWidth / 5), viewHeight / 2 + (picHeight / 3));
+        path.moveTo(viewWidth / 2, viewHeight / 2 - (picWidth / 3));
+        path.lineTo(viewWidth / 2, viewHeight / 2 + (picHeight / 3));
+    }
+
+
+    private int getMySize(int defaultSize, int measureSpec) {
+        int mySize = defaultSize;
+
+        int mode = MeasureSpec.getMode(measureSpec);
+        int size = MeasureSpec.getSize(measureSpec);
+
+        switch (mode) {
+            case MeasureSpec.UNSPECIFIED: {//如果没有指定大小，就设置为默认大小
+                mySize = defaultSize;
+                break;
+            }
+            case MeasureSpec.AT_MOST: {//如果测量模式是最大取值为size
+                //我们将大小取最大值,你也可以取其他值
+                mySize = size;
+                break;
+            }
+            case MeasureSpec.EXACTLY: {//如果是固定的大小，那就不要去改变它
+                mySize = size;
+                break;
+            }
+        }
+        return mySize;
+    }
+}
